@@ -1,18 +1,16 @@
 
 #include "ForwardList.h"
 
-// Test function to demonstrate all functionality
 int main() {
-    std::cout << "=== ForwardList Implementation Test ===" << std::endl;
-    std::cout << std::endl;
+ 
 
-    // Test 1: Constructor and basic operations
-    std::cout << "Test 1: Constructor and basic operations" << std::endl;
+    // Test function to demonstrate all functionality
+
     ForwardList list1;
     std::cout << "Empty list: " << list1 << std::endl;
    
     if (list1.IsEmpty()) {
-        std::cout << "Is empty: Yes" << std::endl;
+        std::cout << "Is empty: Yes" << std::endl; // deberia salir esto porq no hemmos añadido nmda
     }
     else {
         std::cout << "Is empty: No" << std::endl;
@@ -20,7 +18,7 @@ int main() {
     std::cout << "Size: " << list1.Size() << std::endl;
     std::cout << std::endl;
 
-    // Test 2: PushBack and PushFront
+    // Test 2: PushBack i PushFront
     std::cout << "Test 2: PushBack and PushFront" << std::endl;
     list1.PushBack(10);
     list1.PushBack(20);
@@ -59,12 +57,12 @@ int main() {
     std::cout << "After Insert(300, end): " << list1 << std::endl;
     std::cout << std::endl;
 
-    // Test 5: Erase elements
+    // Test 5: Erase nuumbers
     std::cout << "Test 5: Erase elements" << std::endl;
     list1.PushBack(20);
     list1.PushBack(20);
     list1.PushFront(20);
-    std::cout << "After adding more 20s: " << list1 << std::endl;
+    std::cout << "After adding more thre 20 : " << list1 << std::endl;
 
     list1.Erase(20);
     std::cout << "After Erase(20): " << list1 << std::endl;
@@ -119,8 +117,8 @@ int main() {
     std::cout << std::endl;
     std::cout << std::endl;
 
-    // Test 8: Operator + (concatenation)
-    std::cout << "Test 8: Operator + (concatenation)" << std::endl;
+    // Test 8: Operator + 
+    std::cout << "Test 8: Operator + " << std::endl;
     ForwardList list5, list6;
 
     list5.PushBack(1);
@@ -178,9 +176,6 @@ int main() {
     largeList.Erase(1);
     largeList.Erase(10);
     std::cout << "After erasing 1, 5, 10: " << largeList << std::endl;
-
-    std::cout << std::endl;
-    std::cout << "=== All tests completed successfully! ===" << std::endl;
 
     return 0;
 }

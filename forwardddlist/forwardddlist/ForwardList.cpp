@@ -1,9 +1,9 @@
 #include "ForwardList.h"
-// Constructor
+
 ForwardList::ForwardList() : m_first(nullptr), m_last(nullptr), m_size(0) {
 }
 
-// Destructor
+
 ForwardList::~ForwardList() {
     while (!IsEmpty()) {
         PopFront();
